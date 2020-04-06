@@ -23,7 +23,7 @@ class Table extends React.Component {
     render() {
         return(
             <div>
-                <table className="table table-striped my-2">
+                <table className="table table-striped table-responsive my-2">
                     <thead>
                         <tr>
                             <th>S/No.</th>
@@ -37,7 +37,7 @@ class Table extends React.Component {
                             <td>*</td>
                             <td><a href="https://example.com">https://example.com</a></td>
                             <td><a href="/123456">123456</a></td>
-                            <td><button className="btn btn-danger">Delete</button></td>
+                            <td><button className="btn btn-danger" disabled>Delete</button></td>
                         </tr>
                         {this.state.data.map((link, index) => {
                             return(
