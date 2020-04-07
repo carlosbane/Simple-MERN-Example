@@ -9,14 +9,6 @@ router.get('/', (req, res) => {
         .catch(err => res.status(400).json({ "message": err }));
 });
 
-router.get('/:shortId', (req, res) => {
-    Links.findOne({ shortlink: req.params.shortId })
-        .then(result => {
-            res.redirect(result.longlink);
-        })
-        .catch(err => console.log(err));
-})
-
 router.post('/', (req, res) => {
     let link = new Links({
         longlink: req.body.longlink
