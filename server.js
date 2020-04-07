@@ -1,8 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
+require('dotenv').config();
 
 // Connection to database
-mongoose.connect('mongodb://localhost:27017/urlshortener', {
+mongoose.connect(process.env.DB_CONNECT, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
