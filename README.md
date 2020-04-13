@@ -22,8 +22,8 @@ It can be cloned and used freely as this is an open source project
 
 ## Built With
 * [MongoDB](https://www.mongodb.org)
-* [Express.js](https://expressjs.org)
-* [React.js](https://reacjs.org)
+* [Express.js](https://www.npmjs.com/package/express)
+* [React.js](https://reactjs.org)
 * [Node.js](https://nodejs.org)
 
 ## Author
